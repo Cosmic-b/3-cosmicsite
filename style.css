@@ -1,4 +1,7 @@
-* {margin: 0px; padding: 0px;}
+* {margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f8f8f8;
@@ -41,8 +44,7 @@ ul.navi {
 
 .hero {
     width: 100%;
-    max-width: 1400px;
-    height: 85vh;
+    height: 75svh;
     background-image: url('splash.webp');
     background-size: cover;
     background-position: center;
@@ -55,14 +57,28 @@ ul.navi {
 }
 
 .hero h1 {
-    margin-top: -8px;
-    padding-left: 5vw;
-    font-size: 18vh;
-    font-family: "Hiragino Kaku Gothic Std", 'impact';
+    --h1-spacing: clamp(
+        -60px, 
+        calc((100vw - 700px) * 0.1), 
+        0px);
+
+    margin-top: -6px;
+    font-size: 8rem;
+    letter-spacing: var(--h1-spacing);
+    transform: translateX(calc(var(--h1-spacing) / 2));
+    font-family: "Hiragino Kaku Gothic Std", "Arial Black", sans-serif;
     color: rgb(0, 0, 255);
     text-align: center;
-    letter-spacing: clamp(-100vw,7vw,20vw);
     line-height: 1;
+}
+
+@media (min-width: 700px) {
+    .hero h1 {
+    --h1-spacing: clamp(
+        0px, 
+        calc((100vw - 700px) * 0.2), 
+        140px);
+    }
 }
 
 .ascii-art {
@@ -97,7 +113,7 @@ ul.navi {
 
 .project-preview {
     aspect-ratio: 4 / 3;
-    width: 400px;
+    width: min(400px, 100%);
     background-color: #8080807d;
     display: flex;
     justify-content: space-evenly;
