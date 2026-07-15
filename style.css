@@ -8,11 +8,45 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    --h1-spacing: 0px;
+    font-size: 4rem;
+    letter-spacing: var(--h1-spacing);
+    transform: translateX(calc(var(--h1-spacing) / 2));
+    font-family: "Hiragino Kaku Gothic Std", "Arial Black", sans-serif;
+    color: rgb(0, 0, 255);
+    text-align: center;
+    line-height: 1;
+}
+
+@media (min-width: 700px) {
+    h1 {
+    --h1-spacing: clamp(
+        0px, 
+        calc((100vw - 700px) * 0.2), 
+        140px);
+    }
+}
+
+h4 {
+    font-family: 'roboto';
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 48px;
+}
+
+#header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 header a {
@@ -31,15 +65,15 @@ footer {
 footer a {
     text-decoration: none;
     color: #333333;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ul.navi {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .hero {
@@ -62,14 +96,9 @@ ul.navi {
         calc((100vw - 700px) * 0.1), 
         0px);
 
-    margin-top: -6px;
     font-size: 8rem;
-    letter-spacing: var(--h1-spacing);
-    transform: translateX(calc(var(--h1-spacing) / 2));
-    font-family: "Hiragino Kaku Gothic Std", "Arial Black", sans-serif;
-    color: rgb(0, 0, 255);
-    text-align: center;
-    line-height: 1;
+    margin-top: -6px;
+
 }
 
 @media (min-width: 700px) {
@@ -133,4 +162,33 @@ ul.navi {
 
 .thumbnail {
     height: 250px;
+}
+
+#music-list {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.release-box {
+    background-color: #8080807d;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.release-box:hover {
+    background-color: #8080803d;
+}
+
+.album-cover {
+    width: 400px;
 }
