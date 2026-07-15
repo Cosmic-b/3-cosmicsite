@@ -19,15 +19,6 @@ h1 {
     line-height: 1;
 }
 
-@media (min-width: 700px) {
-    h1 {
-    --h1-spacing: clamp(
-        0px, 
-        calc((100vw - 700px) * 0.2), 
-        140px);
-    }
-}
-
 h4 {
     font-family: 'roboto';
     font-weight: normal;
@@ -79,7 +70,7 @@ ul.navi {
 .hero {
     width: 100%;
     height: 75svh;
-    background-image: url('splash.webp');
+    background-image: url('../splash.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,33 +153,4 @@ ul.navi {
 
 .thumbnail {
     height: 250px;
-}
-
-#music-list {
-    padding-top: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.release-box {
-    background-color: #8080807d;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px;
-}
-
-.release-box:hover {
-    background-color: #8080803d;
-}
-
-.album-cover {
-    width: 400px;
 }

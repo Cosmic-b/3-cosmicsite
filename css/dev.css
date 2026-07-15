@@ -1,0 +1,42 @@
+h1 {
+    color: lime;
+    font-size: 2rem;
+}
+
+body {
+    background-color: #333333;
+}
+
+ul a {
+    color: white;
+}
+
+#music-list {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.release-box {
+    background-color: #909090;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    color: #201E1F;
+}
+
+.release-box:hover {
+    background-color: #b7b7b7;
+}
+
+.album-cover {
+    width: 320px;
+}
