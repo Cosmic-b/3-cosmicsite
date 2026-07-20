@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #202124;
+    background: #f5f6f8;
+    font-family: system-ui, sans-serif;
+}
+
+main {
+    width: min(760px, calc(100% - 32px));
+    margin: 40px auto;
+}
+
+form,
+section {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #d7dbe0;
+    border-radius: 10px;
+    background: white;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px 12px;
+    font: inherit;
+}
+
+#json-file {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#save-filename {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.form-actions,
+.project-actions {
+    display: flex;
+    gap: 8px;
+}
+
+#status {
+    min-height: 24px;
+}
+
+#status.error {
+    color: #b3261e;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e5e9;
+}
+
+.project-card:last-child {
+    border-bottom: 0;
+}
+
+.project-card h2,
+section > h1,
+section > h2 {
+    margin-top: 0;
+}
+
+.project-card p {
+    margin: 4px 0;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 14px;
+    border-radius: 6px;
+    background: #f0f2f4;
+}
+
+.empty-state {
+    color: #666;
+}
+
+@media (max-width: 560px) {
+    .project-card {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
