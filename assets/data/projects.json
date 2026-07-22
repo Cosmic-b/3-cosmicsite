@@ -1,0 +1,146 @@
+[
+  {
+    "id": "дети-зимы",
+    "name": "Дети зимы",
+    "type": "music",
+    "date": "2026-04-06",
+    "splashImage": "./assets/images/projects/дети-зимы/splash.webp",
+    "thumbnailImage": "./assets/images/projects/дети-зимы/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/дети-зимы.md"
+  },
+  {
+    "id": "никому-кроме-тебя",
+    "name": "Никому кроме тебя",
+    "type": "music",
+    "date": "2025-12-19",
+    "splashImage": "./assets/images/projects/никому-кроме-тебя/splash.webp",
+    "thumbnailImage": "./assets/images/projects/никому-кроме-тебя/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/никому-кроме-тебя.md"
+  },
+  {
+    "id": "украла-мой-стиль",
+    "name": "Украла мой стиль",
+    "type": "music",
+    "date": "2025-10-17",
+    "splashImage": "./assets/images/projects/украла-мой-стиль/splash.webp",
+    "thumbnailImage": "./assets/images/projects/украла-мой-стиль/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/украла-мой-стиль.md"
+  },
+  {
+    "id": "ночью",
+    "name": "Ночью",
+    "type": "music",
+    "date": "2025-08-29",
+    "splashImage": "./assets/images/projects/ночью/splash.webp",
+    "thumbnailImage": "./assets/images/projects/ночью/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/ночью.md"
+  },
+  {
+    "id": "cosmic-bitch",
+    "name": "Cosmic Bitch",
+    "type": "music",
+    "date": "2025-05-23",
+    "splashImage": "./assets/images/projects/cosmic-bitch/splash.webp",
+    "thumbnailImage": "./assets/images/projects/cosmic-bitch/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/cosmic-bitch.md"
+  },
+  {
+    "id": "я-просто-дышу",
+    "name": "Я просто дышу",
+    "type": "music",
+    "date": "2025-05-09",
+    "splashImage": "./assets/images/projects/я-просто-дышу/splash.webp",
+    "thumbnailImage": "./assets/images/projects/я-просто-дышу/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/я-просто-дышу.md"
+  },
+  {
+    "id": "писк-куратор",
+    "name": "Писк куратор",
+    "type": "music",
+    "date": "2025-04-18",
+    "splashImage": "./assets/images/projects/писк-куратор/splash.webp",
+    "thumbnailImage": "./assets/images/projects/писк-куратор/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/писк-куратор.md"
+  },
+  {
+    "id": "smart-cosmic-joint-9lufs-deluxe",
+    "name": "Smart Cosmic Joint -9lufs (Deluxe)",
+    "type": "music",
+    "date": "2025-02-15",
+    "splashImage": "./assets/images/projects/smart-cosmic-joint-9lufs-deluxe/splash.webp",
+    "thumbnailImage": "./assets/images/projects/smart-cosmic-joint-9lufs-deluxe/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/smart-cosmic-joint-9lufs-deluxe.md"
+  },
+  {
+    "id": "smart-cosmic-joint-9lufs",
+    "name": "Smart Cosmic Joint -9lufs",
+    "type": "music",
+    "date": "2025-01-15",
+    "splashImage": "./assets/images/projects/smart-cosmic-joint-9lufs/splash.webp",
+    "thumbnailImage": "./assets/images/projects/smart-cosmic-joint-9lufs/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/smart-cosmic-joint-9lufs.md"
+  },
+  {
+    "id": "никогда-никогда",
+    "name": "Никогда - никогда",
+    "type": "music",
+    "date": "2024-12-23",
+    "splashImage": "./assets/images/projects/никогда-никогда/splash.webp",
+    "thumbnailImage": "./assets/images/projects/никогда-никогда/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/никогда-никогда.md"
+  },
+  {
+    "id": "твои-друзья",
+    "name": "Твои друзья",
+    "type": "music",
+    "date": "2024-11-29",
+    "splashImage": "./assets/images/projects/твои-друзья/splash.webp",
+    "thumbnailImage": "./assets/images/projects/твои-друзья/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/твои-друзья.md"
+  },
+  {
+    "id": "самые-гнилые-бошки-на-этом-районе",
+    "name": "Самые гнилые бошки на этом районе",
+    "type": "music",
+    "date": "2024-11-15",
+    "splashImage": "./assets/images/projects/самые-гнилые-бошки-на-этом-районе/splash.webp",
+    "thumbnailImage": "./assets/images/projects/самые-гнилые-бошки-на-этом-районе/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/самые-гнилые-бошки-на-этом-районе.md"
+  },
+  {
+    "id": "cosmic-site-this",
+    "name": "Cosmic site (this)",
+    "type": "dev",
+    "date": "2026-07-08",
+    "splashImage": "./assets/images/projects/cosmic-site-this/splash.webp",
+    "thumbnailImage": "./assets/images/projects/cosmic-site-this/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/cosmic-site-this.md"
+  },
+  {
+    "id": "that-shitty-player",
+    "name": "That shitty player",
+    "type": "dev",
+    "date": "2026-07-01",
+    "splashImage": "./assets/images/projects/that-shitty-player/splash.webp",
+    "thumbnailImage": "./assets/images/projects/that-shitty-player/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/that-shitty-player.md"
+  },
+  {
+    "id": "dumb-ass-calc",
+    "name": "dumb ass calc",
+    "type": "dev",
+    "date": "2026-06-27",
+    "splashImage": "./assets/images/projects/dumb-ass-calc/splash.webp",
+    "thumbnailImage": "./assets/images/projects/dumb-ass-calc/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/dumb-ass-calc.md"
+  },
+  {
+    "id": "cosmicline",
+    "name": "CosmicLine",
+    "type": "dev",
+    "date": "2025-09-30",
+    "splashImage": "./assets/images/projects/cosmicline/splash.webp",
+    "thumbnailImage": "./assets/images/projects/cosmicline/thumbnail.webp",
+    "mdDescription": "./assets/data/projects/cosmicline.md"
+  }
+]

@@ -1,0 +1,54 @@
+h1 {
+    color: #b7245c;
+    font-size: 3rem;
+    padding: 48px;
+    letter-spacing: normal;
+}
+
+body {
+    background-color: #201E1F;
+}
+
+ul a {
+    color: #FFFBDB;
+}
+
+.footer-year {
+    color: #FFFBDB;
+}
+
+#logo {
+    color: #FFFBDB;
+}
+
+#music-list {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #FFFBDB;
+}
+
+.release-box {
+    background-color: #6CBEED;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 3%;
+    color: #201E1F;
+}
+
+.release-box:hover {
+    background-color: #FFEC51;
+}
+
+.album-cover {
+    width: 320px;
+}
