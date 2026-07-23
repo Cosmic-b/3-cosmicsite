@@ -101,7 +101,6 @@
 }
 
 .project-preview {
-    aspect-ratio: 4 / 3;
     width: min(480px, 100vw);
     max-width: 100%;
     background-color: #8080807d;
