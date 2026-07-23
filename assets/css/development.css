@@ -32,7 +32,7 @@ ul a {
 
 .release-box {
     background-color: #909090;
-    width: 400px;
+    width: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,5 +47,5 @@ ul a {
 }
 
 .album-cover {
-    width: 320px;
+    height: 320px;
 }
