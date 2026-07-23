@@ -32,7 +32,8 @@ ul a {
 
 .release-box {
     background-color: #909090;
-    width: 480px;
+    width: min(480px, 100vw);
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
