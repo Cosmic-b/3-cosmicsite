@@ -58,6 +58,7 @@ function getTrackAtSecond(tracks, second = dateToPlaylistSecond()) {
 function connectPlayButton(button) {
     const audio = new Audio();
     audio.preload = "none";
+    audio.volume = 0.6;
     let tracks = [];
 
     function setButton(
