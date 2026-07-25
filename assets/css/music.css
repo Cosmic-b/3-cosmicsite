@@ -1,8 +1,51 @@
-h1 {
-    color: #b7245c;
-    font-size: 3rem;
-    padding: 48px;
+.radio-heading {
+    --radio-heading-color: #b7245c;
+    --radio-heading-size: 3rem;
+    --radio-button-size: calc(var(--radio-heading-size) * 1.3);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 2rem;
+}
+
+.radio-heading h1 {
+    color: var(--radio-heading-color);
+    font-size: var(--radio-heading-size);
+    padding: 0;
     letter-spacing: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#play-radio {
+    display: block;
+    flex: 0 0 var(--radio-button-size);
+    width: var(--radio-button-size);
+    height: var(--radio-button-size);
+    padding: calc(var(--radio-heading-size) * 0.15);
+    border: 0;
+    color: var(--radio-heading-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+#play-radio:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.radio-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+#play-radio[aria-pressed="false"] .radio-icon--pause,
+#play-radio[aria-pressed="true"] .radio-icon--play {
+    display: none;
 }
 
 body {
@@ -51,4 +94,18 @@ ul a {
 
 .album-cover {
     width: 320px;
+}
+
+@media (max-width: 560px) {
+    .radio-heading {
+        gap: 0.5rem;
+    }
+
+    .radio-heading h1 {
+        white-space: normal;
+    }
+
+    .radio-heading h1 span {
+        display: block;
+    }
 }

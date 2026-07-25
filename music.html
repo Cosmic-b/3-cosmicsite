@@ -25,7 +25,33 @@
         </nav>
     </header>
     <div id='main-block'>
-        <h1>Listen to Cosmic.</h1>
+        <div class="radio-heading">
+            <button
+                id="play-radio"
+                type="button"
+                aria-label="Play Cosmic Radio"
+                aria-pressed="false"
+                title="Play Cosmic Radio"
+            >
+                <svg
+                    class="radio-icon radio-icon--play"
+                    viewBox="0 0 48 48"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+                    <path d="M10 5L43 24L10 43Z"/>
+                </svg>
+                <svg
+                    class="radio-icon radio-icon--pause"
+                    viewBox="0 0 48 48"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+                    <path d="M9 5H20V43H9ZM28 5H39V43H28Z"/>
+                </svg>
+            </button>
+            <h1><span>Listen to</span> <span>Cosmic.</span></h1>
+        </div>
         <div
             id="music-list"
             data-project-list
@@ -45,5 +71,6 @@
         </nav>
     </footer>
 
+    <script src="./admin/cosmic-radio/cosmic-radio.js"></script>
     <script src="./main.js"></script>
 </body>
