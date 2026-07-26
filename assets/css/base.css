@@ -19,10 +19,17 @@ h1 {
     font-size: 4rem;
     letter-spacing: var(--h1-spacing);
     transform: translateX(calc(var(--h1-spacing) / 2));
-    font-family: "Hiragino Kaku Gothic Std", "Arial Black", sans-serif;
+    font-family: "Hiragino Kaku Gothic Std", "League Spartan", sans-serif;
     color: rgb(0, 0, 255);
     text-align: center;
     line-height: 1;
+}
+
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h4 {
