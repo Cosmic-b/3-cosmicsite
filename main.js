@@ -22,7 +22,9 @@ contactLinks.forEach(link => {
 
 async function loadProjects() {
     try {
-        const response = await fetch("./assets/data/projects.json");
+        const response = await fetch("./assets/data/projects.json", {
+            cache: "no-store"
+        });
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
@@ -34,14 +36,31 @@ async function loadProjects() {
             throw new Error("The JSON root must be an array.");
         }
 
-        projectsDatabase = projects;
-        projectLists.forEach(list => renderProjects(list, projects));
+        const normalizedProjects = projects.map(normalizeProjectPaths);
+
+        projectsDatabase = normalizedProjects;
+        projectLists.forEach(list => renderProjects(list, normalizedProjects));
         syncProjectModalWithUrl();
     } catch (error) {
         projectLists.forEach(list => {
             list.replaceChildren(createMessage(`Could not load projects: ${error.message}`));
         });
     }
+}
+
+function normalizeProjectPaths(project) {
+    if (!project || typeof project.id !== "string") {
+        return project;
+    }
+
+    const projectPath = `./assets/data/projects/${project.id}`;
+
+    return {
+        ...project,
+        splashImage: `${projectPath}/splash.webp`,
+        thumbnailImage: `${projectPath}/thumbnail.webp`,
+        mdDescription: `${projectPath}/${project.id}.md`
+    };
 }
 
 function renderProjects(list, projects) {

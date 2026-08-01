@@ -69,9 +69,9 @@ function createProject(name, type, date) {
         name: name.trim(),
         type,
         date,
-        splashImage: `./assets/images/projects/${id}/splash.webp`,
-        thumbnailImage: `./assets/images/projects/${id}/thumbnail.webp`,
-        mdDescription: `./assets/data/projects/${id}.md`
+        splashImage: `./assets/data/projects/${id}/splash.webp`,
+        thumbnailImage: `./assets/data/projects/${id}/thumbnail.webp`,
+        mdDescription: `./assets/data/projects/${id}/${id}.md`
     };
 }
 
